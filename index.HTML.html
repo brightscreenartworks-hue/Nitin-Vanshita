@@ -7,7 +7,7 @@
   <title>Nitin &amp; Vanshita — Wedding Invitation</title>
   <meta name="title" content="Nitin &amp; Vanshita — Wedding Invitation">
   <meta name="description"
-    content="Join Nitin and Vanshita as they celebrate their wedding on 19 &amp; 20 November 2026 in Bahraich.">
+    content="Join Nitin and Vanshita as they celebrate their wedding on 19th &amp; 20th November 2026 in Bahraich.">
 
   <!-- Open Graph / WhatsApp / Facebook / LinkedIn / Instagram -->
   <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
   <meta property="og:site_name" content="Nitin &amp; Vanshita Wedding">
   <meta property="og:title" content="Nitin &amp; Vanshita — Wedding Invitation">
   <meta property="og:description"
-    content="Join Nitin and Vanshita as they celebrate their wedding on 19 &amp; 20 November 2026 in Bahraich.">
+    content="Join Nitin and Vanshita as they celebrate their wedding on 19th &amp; 20th November 2026 in Bahraich.">
   <meta property="og:image" content="https://nitinandvanshita.vercel.app/og-image.jpg">
   <meta property="og:image:secure_url" content="https://nitinandvanshita.vercel.app/og-image.jpg">
   <meta property="og:image:type" content="image/jpeg">
@@ -36,13 +36,13 @@
   <meta name="twitter:url" content="https://nitinandvanshita.vercel.app/">
   <meta name="twitter:title" content="Nitin &amp; Vanshita — Wedding Invitation">
   <meta name="twitter:description"
-    content="Join Nitin and Vanshita as they celebrate their wedding on 19 &amp; 20 November 2026 in Bahraich.">
+    content="Join Nitin and Vanshita as they celebrate their wedding on 19th &amp; 20th November 2026 in Bahraich.">
   <meta name="twitter:image" content="https://nitinandvanshita.vercel.app/og-image.jpg">
 
   <!-- Additional Chat & Search App Fallbacks -->
   <meta itemprop="name" content="Nitin &amp; Vanshita — Wedding Invitation">
   <meta itemprop="description"
-    content="Join Nitin and Vanshita as they celebrate their wedding on 19 &amp; 20 November 2026 in Bahraich.">
+    content="Join Nitin and Vanshita as they celebrate their wedding on 19th &amp; 20th November 2026 in Bahraich.">
   <meta itemprop="image" content="https://nitinandvanshita.vercel.app/og-image.jpg">
   <link rel="image_src" href="https://nitinandvanshita.vercel.app/og-image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -571,8 +571,91 @@
     }
 
     .welcome-msg {
-      margin-top: 20px;
+      margin-top: 18px;
       color: var(--text);
+      font-size: clamp(17px, 2.6vw, 20px);
+      line-height: 1.6;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .welcome-ganesh-wrap {
+      margin: 18px auto 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .welcome-ganesh-icon {
+      width: clamp(66px, 12vw, 84px);
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      filter: drop-shadow(0 4px 14px rgba(230, 138, 0, 0.28));
+    }
+
+    .welcome-shloka {
+      font-family: var(--font-serif);
+      font-size: clamp(17px, 3.2vw, 22px);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--red);
+      margin: 0;
+    }
+
+    .welcome-couple-family {
+      margin: 28px auto 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .person-card {
+      text-align: center;
+    }
+
+    .person-name {
+      font-family: var(--font-script);
+      font-size: clamp(56px, 14vw, 90px);
+      line-height: 0.95;
+      color: var(--red);
+      margin: 0;
+    }
+
+    .person-parents {
+      font-family: var(--font-serif);
+      font-size: clamp(14px, 2.4vw, 16.5px);
+      letter-spacing: 0.05em;
+      color: var(--text);
+      margin-top: 6px;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    .weds-separator {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin: 6px 0;
+    }
+
+    .weds-separator .line {
+      display: inline-block;
+      width: 52px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--brown), transparent);
+    }
+
+    .weds-separator .word {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-size: clamp(22px, 4vw, 28px);
+      color: var(--brown);
+      font-weight: 500;
     }
 
     /* ---------- 03 OUR STORY ---------- */
@@ -929,9 +1012,18 @@
       font-family: var(--font-serif);
       font-size: 28.75px;
       /* Increased by 25% from 23px */
-      margin: 6px 0 4px;
+      margin: 6px 0 2px;
       color: var(--red);
       font-weight: 600;
+    }
+
+    .t-ceremony {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-size: 20px;
+      color: var(--brown);
+      margin: 0 0 6px;
+      font-weight: 500;
     }
 
     .t-venue {
@@ -1001,20 +1093,27 @@
       }
     }
 
-    /* ---------- 06 VENUES (TWO VENUES) ---------- */
+    /* ---------- 06 VENUES ---------- */
     .venues-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 44px;
-      max-width: 940px;
+      gap: 36px;
+      max-width: 1040px;
       margin: 0 auto;
     }
 
     @media (min-width:768px) {
       .venues-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 36px;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 28px;
         align-items: stretch;
+      }
+    }
+
+    @media (min-width:1024px) {
+      .venues-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
       }
     }
 
@@ -1430,22 +1529,29 @@
     }
 
     .site-footer .footer-mono {
-      width: 70px;
-      /* Increased by 25% from 56px */
-      height: 70px;
-      /* Increased by 25% from 56px */
-      margin: 0 auto 16px;
+      margin: 0 auto 18px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: var(--font-script);
       font-size: 32.5px;
-      /* Increased by 25% from 26px */
       color: #FFFFFF;
       white-space: nowrap;
     }
 
+    .site-footer .footer-mono.has-img {
+      width: clamp(120px, 24vw, 150px);
+      height: clamp(120px, 24vw, 150px);
+      background: #FFFFFF;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+      border: 2px solid rgba(255, 255, 255, 0.9);
+    }
+
     .site-footer .footer-mono:not(.has-img) {
+      width: 70px;
+      height: 70px;
       border: 1px solid rgba(255, 255, 255, 0.6);
       border-radius: 50%;
     }
@@ -1701,7 +1807,7 @@
           <circle class="preloader-ring-bg" cx="50" cy="50" r="44"></circle>
           <circle class="preloader-ring-stroke" cx="50" cy="50" r="44"></circle>
         </svg>
-        <div class="preloader-initials">N &amp; V</div>
+        <img src="./assets/images/logo-neev.png" alt="Nitin &amp; Vanshita Logo" class="preloader-logo-img" style="width:74px; height:74px; object-fit:contain; border-radius:50%; z-index:2; position:relative; background:#FFFFFF; padding:4px;" />
       </div>
       <div class="preloader-names heading-script">Nitin &amp; Vanshita</div>
       <div class="preloader-tagline">WEDDING INVITATION</div>
@@ -1761,17 +1867,18 @@
     const weddingData = {
       seo: {
         title: "Nitin & Vanshita — Wedding Invitation",
-        description: "Join Nitin and Vanshita as they celebrate their wedding on 19 & 20 November 2026 in Bahraich.",
+        description: "Join Nitin and Vanshita as they celebrate their wedding on 19th & 20th November 2026 in Bahraich.",
         ogTitle: "Nitin & Vanshita — Wedding Invitation",
-        ogDescription: "Join Nitin and Vanshita as they celebrate their wedding on 19 & 20 November 2026 in Bahraich.",
-        ogImage: "./Thumbnail copy.jpg"
+        ogDescription: "Join Nitin and Vanshita as they celebrate their wedding on 19th & 20th November 2026 in Bahraich.",
+        ogImage: "./og-image.jpg"
       },
 
       brand: {
         groomShort: "Nitin",
         brideShort: "Vanshita",
         monogram: "N & V",
-        weddingDate: "20 November 2026",
+        logo: "./assets/images/logo-neev.png",
+        weddingDate: "20th November 2026",
         primaryColor: "#A52A2A",
         secondaryColor: "#B79A6A",
         accentColor: "#B58B7A",
@@ -1797,12 +1904,16 @@
       welcome: {
         enabled: true,
         eyebrow: "We're Getting Married",
+        ganeshIcon: "./assets/images/ganesh-ji.png",
+        shloka: "।। श्री गणेशाय नमः ।।",
+        message: "Together with their families, we joyfully invite you to celebrate the union of two hearts and the beginning of a beautiful forever.",
         groom: "Nitin",
-        ampersand: "&",
+        groomParents: "S/o - Mrs. Neelam and Mahendra Goyal",
+        connective: "weds",
         bride: "Vanshita",
-        date: "20 November 2026",
-        location: "",
-        message: "Together with their families, Nitin and Vanshita warmly invite you to celebrate the beginning of their new journey together."
+        brideParents: "D/o - Mrs. Anita Singhania and Late Mr. Rajesh Kumar Singhania",
+        date: "20th November 2026",
+        location: ""
       },
 
       /* 03 — Our Story */
@@ -1831,7 +1942,7 @@
         enabled: true,
         eyebrow: "EVENT DATE’S",
         title: "SAVE THE DATE",
-        date: "20 November 2026",
+        date: "20th November 2026",
         coupleNames: "Nitin & Vanshita",
         message: "Coming soon to our special day — we hope you'll join us.",
         weddingDateTime: "2026-11-20T17:00:00+05:30",
@@ -1847,60 +1958,77 @@
         enabled: true,
         eyebrow: "FUNCTIONS DETAILS",
         title: "FUNCTIONS TIMELINE",
-        date: "19 & 20 NOVEMBER 2026",
+        date: "19th & 20th NOVEMBER 2026",
         events: [
           {
-            name: "Carnival",
-            time: "19th November",
-            venue: "11 AM onwards"
+            name: "Fiesta of Joy",
+            ceremony: "(Carnival)",
+            date: "19th November 2026",
+            venue: "11:00 AM onwards"
           },
           {
-            name: "Tilak & Sangeet Night",
-            time: "19th November",
-            venue: "5 PM onwards\nFollowed by dinner"
+            name: "The Musical Soirée",
+            ceremony: "(Tilak & Sangeet Night)",
+            date: "19th November 2026",
+            venue: "5:00 PM onwards"
           },
           {
-            name: "Bhaat",
-            time: "20th November",
-            venue: "11 AM onwards"
+            name: "The Family Blessings",
+            ceremony: "(Bhaat)",
+            date: "20th November 2026",
+            venue: "11:00 AM onwards"
           },
           {
-            name: "Wedding",
-            time: "20th November",
-            venue: "Nikashi - 5 PM onwards\nJaimala - 8:30 PM onwards"
+            name: "The Sacred Union",
+            ceremony: "(Wedding)",
+            date: "20th November 2026",
+            venue: "Nikashi - 5:00 PM onwards\nJaimala - 8:30 PM onwards"
           }
         ]
       },
 
-      /* 06 — Venues (Two Separate Venues: Carnival & Bhaat, Wedding Venue) */
+      /* 06 — Venues (Three Separate Venues) */
       venue: {
         enabled: true,
         eyebrow: "The Venues",
-        title: "OUR VENUES",
+        title: "IN VENUES",
         venues: [
           {
-            type: "CARNIVAL & BHAAT",
+            type: "CARNIVAL",
             number: "01",
             name: "Playground Area, Leisure Resort",
             image: "./venue-playground.jpg",
-            alt: "Playground Area, Leisure Resort - Carnival & Bhaat venue",
-            date: "19 & 20 November 2026",
+            alt: "Playground Area, Leisure Resort - Carnival",
+            date: "19th November 2026",
             time: "11:00 AM onwards",
             address: "Playground Area, Leisure Resort",
-            description: "A lively and picturesque setting for the joyful Carnival games and heartfelt Bhaat ceremony.",
+            description: "A lively and picturesque setting for the joyful Carnival games and celebrations.",
+            buttonText: "VIEW LOCATION",
+            mapsUrl: "https://share.google/poT3M5kjsEhuBLvqJ"
+          },
+          {
+            type: "TILAK & SANGEET NIGHT",
+            number: "02",
+            name: "Leisure Resort",
+            image: "./venue-resort.jpg",
+            alt: "Leisure Resort - Tilak & Sangeet Night",
+            date: "19th November 2026",
+            time: "5:00 PM onwards",
+            address: "Tikora Mod, Bahraich",
+            description: "An enchanting evening of music, dance, celebrations, and joyous festivities.",
             buttonText: "VIEW LOCATION",
             mapsUrl: "https://share.google/poT3M5kjsEhuBLvqJ"
           },
           {
             type: "WEDDING",
-            number: "02",
+            number: "03",
             name: "Leisure Resort",
-            image: "./venue-resort.jpg",
-            alt: "Leisure Resort, Tikora Mod, Bahraich - Wedding venue",
-            date: "20 November 2026",
-            time: "5:00 PM onwards",
+            image: "./venue-wedding.jpg",
+            alt: "Leisure Resort - Wedding Ceremony",
+            date: "20th November 2026",
+            time: "8:30 PM onwards",
             address: "Tikora Mod, Bahraich",
-            description: "An elegant resort setting for Nikashi, royal Jaimala, and the grand wedding celebration.",
+            description: "An elegant resort setting for the royal Nikashi, sacred Jaimala, and the grand wedding celebration.",
             buttonText: "VIEW LOCATION",
             mapsUrl: "https://share.google/poT3M5kjsEhuBLvqJ"
           }
@@ -1920,14 +2048,14 @@
         enabled: true,
         title: "FOREVER BEGINS HERE",
         names: "Nitin & Vanshita",
-        date: "20 NOVEMBER 2026",
+        date: "20th NOVEMBER 2026",
         message: "With hearts full of gratitude, we thank you for being part of our story — we can't wait to celebrate with you."
       },
 
       footer: {
         enabled: true,
         monogram: "N & V",
-        monogramImg: "./monogram_nv.svg",
+        monogramImg: "./assets/images/logo-neev.png",
         tagline: "Made with love, for the people we love most.",
         credit: "© 2026 Nitin & Vanshita"
       }
@@ -2029,21 +2157,47 @@
     function renderWelcome(data) {
       const d = data.welcome || {};
       const locationText = d.location ? ` · ${escapeHtml(d.location.toUpperCase())}` : "";
-      const rawDate = (d.date || "20 November 2026").toUpperCase();
+      const rawDate = (d.date || "20th November 2026").toUpperCase();
       const styledDate = palatinoNumbers(escapeHtml(rawDate));
       const dateHtml = `${styledDate}${locationText}`;
-      return section("welcome", "tight welcome-section", `
-    <div class="container">
-      <div class="welcome-wrap" data-reveal>
-        <p class="eyebrow">${escapeHtml(d.eyebrow || "We're Getting Married")}</p>
+
+      const ganeshHtml = d.ganeshIcon ? `
+        <div class="welcome-ganesh-wrap">
+          <img src="${escapeHtml(d.ganeshIcon)}" alt="Lord Ganesha" class="welcome-ganesh-icon" />
+          ${d.shloka ? `<p class="welcome-shloka">${escapeHtml(d.shloka)}</p>` : ""}
+        </div>` : "";
+
+      const coupleFamilyHtml = (d.groomParents || d.brideParents) ? `
+        <div class="welcome-couple-family">
+          <div class="person-card">
+            <h2 class="heading-script person-name">${escapeHtml(d.groom || "Nitin")}</h2>
+            ${d.groomParents ? `<p class="person-parents">${escapeHtml(d.groomParents)}</p>` : ""}
+          </div>
+          <div class="weds-separator">
+            <span class="line"></span>
+            <span class="word">${escapeHtml(d.connective || "weds")}</span>
+            <span class="line"></span>
+          </div>
+          <div class="person-card">
+            <h2 class="heading-script person-name">${escapeHtml(d.bride || "Vanshita")}</h2>
+            ${d.brideParents ? `<p class="person-parents">${nl2br(escapeHtml(d.brideParents))}</p>` : ""}
+          </div>
+        </div>` : `
         <h1 class="heading-script welcome-names">
           ${escapeHtml(d.groom || data.brand.groomShort || "Nitin")}
           <span class="welcome-amp">${escapeHtml(d.ampersand || "&")}</span>
           ${escapeHtml(d.bride || data.brand.brideShort || "Vanshita")}
-        </h1>
+        </h1>`;
+
+      return section("welcome", "tight welcome-section", `
+    <div class="container">
+      <div class="welcome-wrap" data-reveal>
+        <p class="eyebrow">${escapeHtml(d.eyebrow || "We're Getting Married")}</p>
+        ${ganeshHtml}
+        <p class="lede welcome-msg">${escapeHtml(d.message || "Together with their families, we joyfully invite you to celebrate the union of two hearts and the beginning of a beautiful forever.")}</p>
+        ${coupleFamilyHtml}
         <p class="welcome-date">${dateHtml}</p>
         ${flourish()}
-        <p class="lede welcome-msg">${escapeHtml(d.message || "Together with their families, Nitin and Vanshita warmly invite you to celebrate the beginning of their new journey together.")}</p>
       </div>
     </div>
   `);
@@ -2085,7 +2239,7 @@
     let countdownInterval = null;
     function renderSaveTheDate(data) {
       const d = data.saveTheDate;
-      const rawDate = d.date || "20 November 2026";
+      const rawDate = d.date || "20th November 2026";
       const styledDate = palatinoNumbers(escapeHtml(rawDate));
       const countdownHtml = d.countdownEnabled ? `
     <div class="countdown" id="countdownEl" aria-live="polite">
@@ -2534,9 +2688,10 @@
       const items = d.events.map(ev => `
     <div class="t-item" data-reveal>
       <span class="t-dot" aria-hidden="true"></span>
-      <p class="t-time">${palatinoNumbers(escapeHtml(ev.time))}</p>
+      <p class="t-time">${palatinoNumbers(escapeHtml(ev.date || ev.time))}</p>
       <h3 class="t-name">${escapeHtml(ev.name)}</h3>
-      <p class="t-venue">${palatinoNumbers(nl2br(ev.venue))}</p>
+      ${ev.ceremony ? `<p class="t-ceremony">${escapeHtml(ev.ceremony)}</p>` : ""}
+      <p class="t-venue">${palatinoNumbers(nl2br(ev.venue || ev.time))}</p>
       ${ev.address ? `<p class="t-addr">${palatinoNumbers(escapeHtml(ev.address))}</p>` : ""}
       ${ev.description ? `<p class="t-desc">${palatinoNumbers(escapeHtml(ev.description))}</p>` : ""}
       ${ev.dressCode ? `<span class="t-badge">${escapeHtml(ev.dressCode)}</span>` : ""}
@@ -2547,14 +2702,14 @@
       <div class="timeline-head" data-reveal>
         <p class="eyebrow">${escapeHtml(d.eyebrow || "FUNCTIONS DETAILS")}</p>
         <h2 class="heading-serif" style="font-size:clamp(34px,5.5vw,46px); color:var(--red);">${escapeHtml(d.title || "FUNCTIONS TIMELINE")}</h2>
-        <p class="std-date">${palatinoNumbers(escapeHtml(d.date || "19 & 20 NOVEMBER 2026"))}</p>
+        <p class="std-date">${palatinoNumbers(escapeHtml(d.date || "19th & 20th NOVEMBER 2026"))}</p>
       </div>
       <div class="timeline">${items}</div>
     </div>
   `);
     }
 
-    /* 06 — VENUES (TWO VENUES: CARNIVAL & BHAAT + WEDDING VENUE) */
+    /* 06 — VENUES (THREE VENUES) */
     function renderVenue(data) {
       const d = data.venue;
       const venues = d.venues || [];
@@ -2562,7 +2717,7 @@
       const cardsHtml = venues.map((v, i) => `
     <div class="venue-card" data-reveal>
       <div class="venue-header-pill">
-        <span class="venue-num">${escapeHtml(v.number || (i === 0 ? "01" : "02"))}</span>
+        <span class="venue-num">${escapeHtml(v.number || (i < 9 ? `0${i+1}` : `${i+1}`))}</span>
         <h3 class="venue-type-title">${escapeHtml(v.type)}</h3>
       </div>
       <div class="venue-media">
@@ -2572,9 +2727,9 @@
         <div>
           <h4 class="venue-name">${escapeHtml(v.name)}</h4>
           <div class="venue-meta-row">
-            <span>${escapeHtml(v.date)}</span>
+            <span>${palatinoNumbers(escapeHtml(v.date))}</span>
             <span>•</span>
-            <span>${escapeHtml(v.time)}</span>
+            <span>${palatinoNumbers(escapeHtml(v.time))}</span>
           </div>
           <p class="venue-addr">${escapeHtml(v.address)}</p>
           <p class="venue-desc">${escapeHtml(v.description)}</p>
@@ -2593,7 +2748,7 @@
     <div class="container">
       <div class="section-head" data-reveal>
         <p class="eyebrow">${escapeHtml(d.eyebrow || "The Venues")}</p>
-        <h2 class="heading-serif" style="font-size:clamp(32px,5vw,44px); color:var(--red);">${escapeHtml(d.title || "VENUE")}</h2>
+        <h2 class="heading-serif" style="font-size:clamp(32px,5vw,44px); color:var(--red);">${escapeHtml(d.title || "IN VENUES")}</h2>
       </div>
       <div class="venues-grid">
         ${cardsHtml}
@@ -2804,11 +2959,14 @@
     /* 08 — CLOSING */
     function renderClosing(data) {
       const d = data.closing;
-      const rawDate = d.date || "20 NOVEMBER 2026";
+      const rawDate = d.date || "20th NOVEMBER 2026";
       const styledDate = palatinoNumbers(escapeHtml(rawDate));
       return section("closing", "tight closing", `
     <div class="container">
       <div data-reveal>
+        <div class="closing-logo-wrap" style="margin: 0 auto 22px; display:flex; justify-content:center;">
+          <img src="./assets/images/logo-neev.png" alt="Nitin &amp; Vanshita Monogram" style="width:clamp(120px, 24vw, 160px); height:auto; filter:drop-shadow(0 6px 18px rgba(0,0,0,0.12));" />
+        </div>
         <p class="closing-title">${escapeHtml(d.title)}</p>
         <h2 class="heading-script closing-names">${escapeHtml(d.names)}</h2>
         <p class="closing-date">${styledDate}</p>
