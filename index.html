@@ -2061,7 +2061,7 @@
         shloka: "।। श्री गणेशाय नमः ।।",
         message: "Together with their families, we joyfully invite you to celebrate the union of two hearts and the beginning of a beautiful forever.",
         groom: "Nitin",
-        groomParents: "S/o - Mrs. Neelam and Mahendra Goyal",
+        groomParents: "S/o - Mrs. Neelam and Mr. Mahendra Agarwal",
         connective: "weds",
         bride: "Vanshita",
         brideParents: "D/o - Mrs. Anita Singhania and Late Mr. Rajesh Kumar Singhania",
@@ -2095,10 +2095,10 @@
         enabled: true,
         eyebrow: "EVENT DATE’S",
         title: "SAVE THE DATE",
-        date: "19th & 20th November 2026",
+        date: "20th November 2026",
         coupleNames: "Nitin & Vanshita",
         message: "Coming soon to our special day — we hope you'll join us.",
-        weddingDateTime: "2026-11-19T11:00:00+05:30",
+        weddingDateTime: "2026-11-20T00:00:00+05:30",
         timezone: "Asia/Kolkata",
         countdownEnabled: true,
         scratchEnabled: true,
@@ -2129,7 +2129,7 @@
             name: "The Family Blessings",
             ceremony: "(Bhaat)",
             date: "20th November 2026",
-            venue: "11:00 AM onwards"
+            venue: "10:00 AM onwards"
           },
           {
             name: "The Sacred Union",
@@ -2154,7 +2154,6 @@
             date: "19th November 2026",
             time: "11:00 AM onwards",
             dressCode: "Pastel & Casual Chic",
-            note: "Joyful pastels, floral prints, breezy lehengas, linens, and lively Indo-western styles.",
             shades: [
               { name: "Sunshine", hex: "#F6D268" },
               { name: "Peach Coral", hex: "#F3A387" },
@@ -2170,7 +2169,6 @@
             date: "19th November 2026",
             time: "5:00 PM onwards",
             dressCode: "Cocktail Glamour & Shimmer",
-            note: "Statement lehengas, sequined sarees, tuxedos, and sharp bandhgalas ready for music and dance.",
             shades: [
               { name: "Midnight Blue", hex: "#1D3557" },
               { name: "Emerald", hex: "#1A5340" },
@@ -2184,9 +2182,8 @@
             name: "The Family Blessings",
             ceremony: "(Bhaat)",
             date: "20th November 2026",
-            time: "11:00 AM onwards",
+            time: "10:00 AM onwards",
             dressCode: "Traditional Festive Splendor",
-            note: "Auspicious yellow, rani pink, bandhani dupattas, and rich festive silk kurtas.",
             shades: [
               { name: "Haldi Yellow", hex: "#EFA825" },
               { name: "Rani Pink", hex: "#D83367" },
@@ -2202,7 +2199,6 @@
             date: "20th November 2026",
             time: "Nikashi - 5:00 PM onwards · Jaimala - 8:30 PM onwards",
             dressCode: "Regal Royal Indian Finery",
-            note: "Opulent royal ethnic wear, rich embroidery, regal sherwanis, and exquisite traditional jewelry.",
             shades: [
               { name: "Royal Red", hex: "#A52A2A" },
               { name: "Pure Ivory", hex: "#FBF7F0" },
@@ -2467,7 +2463,7 @@
     let countdownInterval = null;
     function renderSaveTheDate(data) {
       const d = data.saveTheDate;
-      const rawDate = d.date || "19th & 20th November 2026";
+      const rawDate = d.date || "20th November 2026";
       const styledDate = palatinoNumbers(escapeHtml(rawDate));
       const countdownHtml = d.countdownEnabled ? `
     <div class="countdown" id="countdownEl" aria-live="polite">
@@ -2967,7 +2963,6 @@
                 ${swatchesHtml}
               </div>
             </div>
-            ${fn.note ? `<p class="wardrobe-note">${escapeHtml(fn.note)}</p>` : ""}
           </div>
         `;
       }).join("");
