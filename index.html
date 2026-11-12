@@ -1083,7 +1083,7 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 28px;
-      max-width: 1040px;
+      max-width: 880px;
       margin: 0 auto;
     }
 
@@ -1245,13 +1245,13 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 36px;
-      max-width: 1040px;
+      max-width: 880px;
       margin: 0 auto;
     }
 
     @media (min-width:768px) {
       .venues-grid {
-        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 28px;
         align-items: stretch;
       }
@@ -1259,8 +1259,8 @@
 
     @media (min-width:1024px) {
       .venues-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
       }
     }
 
@@ -1954,7 +1954,8 @@
           <circle class="preloader-ring-bg" cx="50" cy="50" r="44"></circle>
           <circle class="preloader-ring-stroke" cx="50" cy="50" r="44"></circle>
         </svg>
-        <img src="./assets/images/logo-neev.png" alt="Nitin &amp; Vanshita Logo" class="preloader-logo-img" style="width:74px; height:74px; object-fit:contain; border-radius:50%; z-index:2; position:relative; background:#FFFFFF; padding:4px;" />
+        <img src="./assets/images/logo-neev.png" alt="Nitin &amp; Vanshita Logo" class="preloader-logo-img"
+          style="width:74px; height:74px; object-fit:contain; border-radius:50%; z-index:2; position:relative; background:#FFFFFF; padding:4px;" />
       </div>
       <div class="preloader-names heading-script">Nitin &amp; Vanshita</div>
       <div class="preloader-tagline">WEDDING INVITATION</div>
@@ -1999,7 +2000,8 @@
     </a>
     <a href="#wardrobe" class="b-nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-        <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10a2 2 0 002 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/>
+        <path
+          d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10a2 2 0 002 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z" />
       </svg>
       <span>Attire</span>
     </a>
@@ -2114,22 +2116,10 @@
         date: "19th & 20th NOVEMBER 2026",
         events: [
           {
-            name: "Fiesta of Joy",
-            ceremony: "(Carnival)",
-            date: "19th November 2026",
-            venue: "11:00 AM onwards"
-          },
-          {
             name: "The Musical Soirée",
             ceremony: "(Tilak & Sangeet Night)",
             date: "19th November 2026",
             venue: "5:00 PM onwards"
-          },
-          {
-            name: "The Family Blessings",
-            ceremony: "(Bhaat)",
-            date: "20th November 2026",
-            venue: "10:00 AM onwards"
           },
           {
             name: "The Sacred Union",
@@ -2149,21 +2139,6 @@
         functions: [
           {
             number: "01",
-            name: "Fiesta of Joy",
-            ceremony: "(Carnival)",
-            date: "19th November 2026",
-            time: "11:00 AM onwards",
-            dressCode: "Pastel & Casual Chic",
-            shades: [
-              { name: "Sunshine", hex: "#F6D268" },
-              { name: "Peach Coral", hex: "#F3A387" },
-              { name: "Sage Mint", hex: "#A9C7A1" },
-              { name: "Sky Blue", hex: "#95BFE4" },
-              { name: "Lavender", hex: "#D6B8E6" }
-            ]
-          },
-          {
-            number: "02",
             name: "The Musical Soirée",
             ceremony: "(Tilak & Sangeet Night)",
             date: "19th November 2026",
@@ -2178,22 +2153,7 @@
             ]
           },
           {
-            number: "03",
-            name: "The Family Blessings",
-            ceremony: "(Bhaat)",
-            date: "20th November 2026",
-            time: "10:00 AM onwards",
-            dressCode: "Traditional Festive Splendor",
-            shades: [
-              { name: "Haldi Yellow", hex: "#EFA825" },
-              { name: "Rani Pink", hex: "#D83367" },
-              { name: "Marigold", hex: "#EB6824" },
-              { name: "Mustard Gold", hex: "#C89D5C" },
-              { name: "Kesar", hex: "#F9BD4D" }
-            ]
-          },
-          {
-            number: "04",
+            number: "02",
             name: "The Sacred Union",
             ceremony: "(Wedding)",
             date: "20th November 2026",
@@ -2210,28 +2170,15 @@
         ]
       },
 
-      /* 06 — Venues (Three Separate Venues) */
+      /* 06 — Venues */
       venue: {
         enabled: true,
         eyebrow: "The Venues",
         title: "IN VENUES",
         venues: [
           {
-            type: "CARNIVAL",
-            number: "01",
-            name: "Playground Area, Leisure Resort",
-            image: "./venue-playground.jpg",
-            alt: "Playground Area, Leisure Resort - Carnival",
-            date: "19th November 2026",
-            time: "11:00 AM onwards",
-            address: "Playground Area, Leisure Resort",
-            description: "A lively and picturesque setting for the joyful Carnival games and celebrations.",
-            buttonText: "VIEW LOCATION",
-            mapsUrl: "https://share.google/poT3M5kjsEhuBLvqJ"
-          },
-          {
             type: "TILAK & SANGEET NIGHT",
-            number: "02",
+            number: "01",
             name: "Leisure Resort",
             image: "./venue-resort.jpg",
             alt: "Leisure Resort - Tilak & Sangeet Night",
@@ -2244,7 +2191,7 @@
           },
           {
             type: "WEDDING",
-            number: "03",
+            number: "02",
             name: "Leisure Resort",
             image: "./venue-wedding.jpg",
             alt: "Leisure Resort - Wedding Ceremony",
@@ -2981,7 +2928,7 @@
   `);
     }
 
-    /* 06 — VENUES (THREE VENUES) */
+    /* 06 — VENUES */
     function renderVenue(data) {
       const d = data.venue;
       const venues = d.venues || [];
@@ -2989,7 +2936,7 @@
       const cardsHtml = venues.map((v, i) => `
     <div class="venue-card" data-reveal>
       <div class="venue-header-pill">
-        <span class="venue-num">${escapeHtml(v.number || (i < 9 ? `0${i+1}` : `${i+1}`))}</span>
+        <span class="venue-num">${escapeHtml(v.number || (i < 9 ? `0${i + 1}` : `${i + 1}`))}</span>
         <h3 class="venue-type-title">${escapeHtml(v.type)}</h3>
       </div>
       <div class="venue-media">
