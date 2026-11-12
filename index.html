@@ -566,7 +566,7 @@
     }
 
     .welcome-ganesh-wrap {
-      margin: 18px auto 14px;
+      margin: 0 auto 16px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -2056,10 +2056,10 @@
       /* 02 — Intro / Welcome */
       welcome: {
         enabled: true,
-        eyebrow: "We're Getting Married",
+        eyebrow: "",
         ganeshIcon: "./assets/images/ganesh-ji.png",
         shloka: "।। श्री गणेशाय नमः ।।",
-        message: "Together with their families, we joyfully invite you to celebrate the union of two hearts and the beginning of a beautiful forever.",
+        message: "Together with their families, we joyfully invite you to celebrate the union of the wedding ceremony of",
         groom: "Nitin",
         groomParents: "S/o - Mrs. Neelam Agarwal and Mr. Mahendra Agarwal",
         connective: "weds",
@@ -2416,9 +2416,9 @@
       return section("welcome", "tight welcome-section", `
     <div class="container">
       <div class="welcome-wrap" data-reveal>
-        <p class="eyebrow">${escapeHtml(d.eyebrow || "We're Getting Married")}</p>
+        ${d.eyebrow ? `<p class="eyebrow">${escapeHtml(d.eyebrow)}</p>` : ""}
         ${ganeshHtml}
-        <p class="lede welcome-msg">${escapeHtml(d.message || "Together with their families, we joyfully invite you to celebrate the union of two hearts and the beginning of a beautiful forever.")}</p>
+        <p class="lede welcome-msg">${escapeHtml(d.message || "Together with their families, we joyfully invite you to celebrate the union of the wedding ceremony of")}</p>
         ${coupleFamilyHtml}
         <p class="welcome-date">${dateHtml}</p>
         ${flourish()}
