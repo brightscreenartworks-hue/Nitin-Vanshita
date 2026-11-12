@@ -1093,6 +1093,168 @@
       }
     }
 
+    /* ---------- 05B WARDROBE PLANNER ---------- */
+    .wardrobe-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .wardrobe-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+    }
+
+    .wardrobe-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px 24px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      text-align: left;
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .wardrobe-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 45px -18px rgba(0, 0, 0, 0.12);
+    }
+
+    .wardrobe-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+    }
+
+    .wardrobe-num {
+      font-family: var(--font-serif);
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      color: var(--brown);
+      font-weight: 700;
+      text-transform: uppercase;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 999px;
+      flex-shrink: 0;
+    }
+
+    .wardrobe-date {
+      font-family: var(--font-serif);
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      color: var(--brown);
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .wardrobe-title {
+      font-family: var(--font-serif);
+      font-size: 23px;
+      color: var(--red);
+      font-weight: 600;
+      line-height: 1.25;
+      margin: 0 0 2px;
+    }
+
+    .wardrobe-ceremony {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-size: 18px;
+      color: var(--brown);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .wardrobe-vibe-badge {
+      display: inline-block;
+      align-self: flex-start;
+      margin: 0 0 16px;
+      font-size: 11.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red);
+      background: rgba(165, 42, 42, 0.06);
+      border: 1px solid rgba(165, 42, 42, 0.18);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-weight: 600;
+    }
+
+    .wardrobe-palette-wrap {
+      margin: 4px 0 16px;
+    }
+
+    .wardrobe-palette-label {
+      font-size: 11.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .wardrobe-swatches {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .wardrobe-swatch-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-width: 48px;
+    }
+
+    .wardrobe-color-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+      transition: transform .2s ease;
+      cursor: default;
+    }
+
+    .wardrobe-color-circle:hover {
+      transform: scale(1.15);
+    }
+
+    .wardrobe-shade-name {
+      font-size: 10.5px;
+      color: var(--text);
+      font-weight: 500;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .wardrobe-note {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--muted);
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px dashed var(--border);
+    }
+
     /* ---------- 06 VENUES ---------- */
     .venues-grid {
       display: grid;
@@ -1850,6 +2012,12 @@
       </svg>
       <span>Events</span>
     </a>
+    <a href="#wardrobe" class="b-nav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10a2 2 0 002 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/>
+      </svg>
+      <span>Attire</span>
+    </a>
     <a href="#venue" class="b-nav-item">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
@@ -1893,7 +2061,7 @@
       hero: {
         enabled: true,
         video: {
-          src: "./Couple_exchanging_floral_garlands_e8880dcc.mp4",
+          src: "./Wedding slide.mp4",
           alt: "Nitin and Vanshita Wedding Invitation Video"
         },
         openButtonText: "OPEN INVITATION",
@@ -1942,10 +2110,10 @@
         enabled: true,
         eyebrow: "EVENT DATE’S",
         title: "SAVE THE DATE",
-        date: "20th November 2026",
+        date: "19th & 20th November 2026",
         coupleNames: "Nitin & Vanshita",
         message: "Coming soon to our special day — we hope you'll join us.",
-        weddingDateTime: "2026-11-20T17:00:00+05:30",
+        weddingDateTime: "2026-11-19T11:00:00+05:30",
         timezone: "Asia/Kolkata",
         countdownEnabled: true,
         scratchEnabled: true,
@@ -1983,6 +2151,80 @@
             ceremony: "(Wedding)",
             date: "20th November 2026",
             venue: "Nikashi - 5:00 PM onwards\nJaimala - 8:30 PM onwards"
+          }
+        ]
+      },
+
+      /* 05B — Wardrobe Planner */
+      wardrobe: {
+        enabled: true,
+        eyebrow: "STYLE GUIDE",
+        title: "WARDROBE PLANNER",
+        description: "To make our celebration even more vibrant and coordinated, here is a curated color palette and attire guide for each function.",
+        functions: [
+          {
+            number: "01",
+            name: "Fiesta of Joy",
+            ceremony: "(Carnival)",
+            date: "19th November 2026",
+            time: "11:00 AM onwards",
+            dressCode: "Pastel & Casual Chic",
+            note: "Joyful pastels, floral prints, breezy lehengas, linens, and lively Indo-western styles.",
+            shades: [
+              { name: "Sunshine", hex: "#F6D268" },
+              { name: "Peach Coral", hex: "#F3A387" },
+              { name: "Sage Mint", hex: "#A9C7A1" },
+              { name: "Sky Blue", hex: "#95BFE4" },
+              { name: "Lavender", hex: "#D6B8E6" }
+            ]
+          },
+          {
+            number: "02",
+            name: "The Musical Soirée",
+            ceremony: "(Tilak & Sangeet Night)",
+            date: "19th November 2026",
+            time: "5:00 PM onwards",
+            dressCode: "Cocktail Glamour & Shimmer",
+            note: "Statement lehengas, sequined sarees, tuxedos, and sharp bandhgalas ready for music and dance.",
+            shades: [
+              { name: "Midnight Blue", hex: "#1D3557" },
+              { name: "Emerald", hex: "#1A5340" },
+              { name: "Shimmer Gold", hex: "#D4AF37" },
+              { name: "Deep Wine", hex: "#5E203C" },
+              { name: "Champagne", hex: "#D9C5A0" }
+            ]
+          },
+          {
+            number: "03",
+            name: "The Family Blessings",
+            ceremony: "(Bhaat)",
+            date: "20th November 2026",
+            time: "11:00 AM onwards",
+            dressCode: "Traditional Festive Splendor",
+            note: "Auspicious yellow, rani pink, bandhani dupattas, and rich festive silk kurtas.",
+            shades: [
+              { name: "Haldi Yellow", hex: "#EFA825" },
+              { name: "Rani Pink", hex: "#D83367" },
+              { name: "Marigold", hex: "#EB6824" },
+              { name: "Mustard Gold", hex: "#C89D5C" },
+              { name: "Kesar", hex: "#F9BD4D" }
+            ]
+          },
+          {
+            number: "04",
+            name: "The Sacred Union",
+            ceremony: "(Wedding)",
+            date: "20th November 2026",
+            time: "Nikashi - 5:00 PM onwards · Jaimala - 8:30 PM onwards",
+            dressCode: "Regal Royal Indian Finery",
+            note: "Opulent royal ethnic wear, rich embroidery, regal sherwanis, and exquisite traditional jewelry.",
+            shades: [
+              { name: "Royal Red", hex: "#A52A2A" },
+              { name: "Pure Ivory", hex: "#FBF7F0" },
+              { name: "Heritage Gold", hex: "#B79A6A" },
+              { name: "Rose Gold", hex: "#C98A7B" },
+              { name: "Deep Maroon", hex: "#6B1724" }
+            ]
           }
         ]
       },
@@ -2068,6 +2310,7 @@
       { key: "ourStory", render: renderStory },
       { key: "saveTheDate", render: renderSaveTheDate },
       { key: "timeline", render: renderTimeline },
+      { key: "wardrobe", render: renderWardrobe },
       { key: "venue", render: renderVenue },
       { key: "closing", render: renderClosing },
       { key: "footer", render: renderFooter }
@@ -2117,7 +2360,7 @@
     /* 01 — FULL-SCREEN INDIAN COUPLE HERO VIDEO */
     function renderHero(data) {
       const d = data.hero || {};
-      const video = d.video || { src: "./Couple_exchanging_floral_garlands_e8880dcc.mp4", alt: "Nitin and Vanshita Wedding Invitation Video" };
+      const video = d.video || { src: "./Wedding slide.mp4", alt: "Nitin and Vanshita Wedding Invitation Video" };
       const openBtnText = d.openButtonText || "OPEN INVITATION";
       const scrollBtnText = d.scrollButtonText || "Scroll for more";
       return `
@@ -2239,7 +2482,7 @@
     let countdownInterval = null;
     function renderSaveTheDate(data) {
       const d = data.saveTheDate;
-      const rawDate = d.date || "20th November 2026";
+      const rawDate = d.date || "19th & 20th November 2026";
       const styledDate = palatinoNumbers(escapeHtml(rawDate));
       const countdownHtml = d.countdownEnabled ? `
     <div class="countdown" id="countdownEl" aria-live="polite">
@@ -2705,6 +2948,55 @@
         <p class="std-date">${palatinoNumbers(escapeHtml(d.date || "19th & 20th NOVEMBER 2026"))}</p>
       </div>
       <div class="timeline">${items}</div>
+    </div>
+  `);
+    }
+
+    /* 05B — WARDROBE PLANNER */
+    function renderWardrobe(data) {
+      const d = data.wardrobe;
+      if (!d || d.enabled === false) return "";
+
+      const cardsHtml = (d.functions || []).map(fn => {
+        const swatchesHtml = (fn.shades || []).map(s => `
+          <div class="wardrobe-swatch-item">
+            <span class="wardrobe-color-circle" style="background-color: ${s.hex};" title="${escapeHtml(s.name)} (${s.hex})"></span>
+            <span class="wardrobe-shade-name">${escapeHtml(s.name)}</span>
+          </div>
+        `).join("");
+
+        return `
+          <div class="wardrobe-card" data-reveal>
+            <div class="wardrobe-card-top">
+              <div>
+                <p class="wardrobe-date">${palatinoNumbers(escapeHtml(fn.date))} · ${palatinoNumbers(escapeHtml(fn.time))}</p>
+                <h3 class="wardrobe-title">${escapeHtml(fn.name)}</h3>
+                <p class="wardrobe-ceremony">${escapeHtml(fn.ceremony)}</p>
+              </div>
+              <span class="wardrobe-num">${escapeHtml(fn.number)}</span>
+            </div>
+            ${fn.dressCode ? `<span class="wardrobe-vibe-badge">✦ ${escapeHtml(fn.dressCode)}</span>` : ""}
+            <div class="wardrobe-palette-wrap">
+              <p class="wardrobe-palette-label">Shades &amp; Colour Palette</p>
+              <div class="wardrobe-swatches">
+                ${swatchesHtml}
+              </div>
+            </div>
+            ${fn.note ? `<p class="wardrobe-note">${escapeHtml(fn.note)}</p>` : ""}
+          </div>
+        `;
+      }).join("");
+
+      return section("wardrobe", "", `
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">${escapeHtml(d.eyebrow || "STYLE GUIDE")}</p>
+        <h2 class="heading-serif" style="font-size:clamp(32px,5vw,44px); color:var(--red);">${escapeHtml(d.title || "WARDROBE PLANNER")}</h2>
+        <p class="lede" style="max-width:620px; margin:10px auto 0;">${escapeHtml(d.description || "Curated color palettes and styling inspirations for every celebration.")}</p>
+      </div>
+      <div class="wardrobe-grid">
+        ${cardsHtml}
+      </div>
     </div>
   `);
     }
